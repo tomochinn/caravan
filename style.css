@@ -9,7 +9,7 @@ a {
   text-decoration: none;
 }
 
-haeder, nav, h2, .main-visual, footer {
+haeder, nav, h2, main-visual, footer {
   font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
 }
 
@@ -24,10 +24,12 @@ header {
 .social i {
   display: inline-block;
   margin-left: 20px;
+}
+
+.social {
   position: absolute;
   top: 22px;
   right: 22px;
-  margin-left: 20px;
 }
 
 header .heading {
@@ -223,4 +225,96 @@ footer {
 
 .footer-text {
   color: #fff;
+}
+
+.social i {
+  color: black;
+}
+
+/*タブレット横置きサイズ(1024px)以下の際に適用される設定*/
+@media screen and (max-width:1024px) {
+  .social i {
+    width: 100%;
+  }
+}
+
+/*タブレット縦置きサイズ(768px)以下の際に適用される設定*/
+@media screen and (max-width:768px) {
+  .social i {
+    width: 100%;
+  }
+}
+
+/*スマートホンサイズ(425px)以下の際に適用される設定*/
+@media screen and (max-width:425px) {
+  .social i {
+    width: 100%;
+    color: red;
+  }
+  
+  
+  header {
+    width: 100%;
+  }
+  
+  .nav-list {
+    width: 100%;
+  }
+  
+  .nav-list-item {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  
+  .main-visual-content {
+    width: 100%;
+  }
+  
+  main {
+    width: 100%;
+    display: block;
+  }
+  
+  .blog {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .blog-box {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+  .blog-image {
+    width: 49%;
+  }
+  
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
+  }
+  
+  .sidebar {
+    width: 100%;
+  }
+  
+  .sidebar-contents {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  
+  .instagram-box {
+    width: 48%;
+    padding-top: 48%;
+  }
+  
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
+  }
+  
+  .pagination {
+    margin-bottom: 50px;
+  }
+  
+  
 }
